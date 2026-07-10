@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="images/final_board_realview_front.png" alt="Variable Speed Drive" width="850">
-</p>
-
-<h1 align="center">Variable Speed Drive</h1>
 
 <p align="center">
 A complete DC Motor Variable Speed Drive (VSD) designed using analog electronics, featuring PWM speed control, bidirectional motor control, PCB design, fabrication, and hardware validation.
@@ -110,29 +105,6 @@ The Variable Speed Drive is composed of the following functional blocks:
 
 ---
 
-## PCB Routing
-
-<p align="center">
-<img src="images/convertor_board_routing.png" width="850">
-</p>
-
-<p align="center">
-<i>Copper routing of the PCB.</i>
-</p>
-
----
-
-## Fabricated PCB
-
-<p align="center">
-<img src="images/board.png" width="700">
-</p>
-
-<p align="center">
-<i>Manufactured PCB before component assembly.</i>
-</p>
-
----
 
 ## Final Hardware
 
