@@ -1,4 +1,6 @@
-
+![GitHub last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/variable_speed_drive)
+![GitHub repo size](https://img.shields.io/github/repo-size/YOUR_USERNAME/variable_speed_drive)
+![License](https://img.shields.io/badge/License-Educational-blue)
 <p align="center">
 A complete DC Motor Variable Speed Drive (VSD) designed using analog electronics, featuring PWM speed control, bidirectional motor control, PCB design, fabrication, and hardware validation.
 </p>
