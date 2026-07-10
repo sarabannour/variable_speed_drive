@@ -1,31 +1,58 @@
-# Variable Speed Drive
+<p align="center">
+  <img src="images/final_board_realview_front.png" alt="Variable Speed Drive" width="850">
+</p>
 
-A complete electronic **Variable Speed Drive (VSD)** designed to control the **speed and rotation direction of a DC motor** using Pulse Width Modulation (PWM). The project covers the entire development process, from theoretical analysis and circuit simulation to PCB design, routing, fabrication, soldering, and hardware validation.
+<h1 align="center">Variable Speed Drive</h1>
 
-# Features
-
-- Adjustable DC motor speed using PWM
-- Forward and reverse motor rotation
-- Start, Stop, and Emergency Stop controls
-- Stable regulated 12V power supply
-- Protection against electrical faults
-- Complete PCB design and routing
-- Circuit simulation before hardware implementation
-- Physical PCB fabrication and testing
+<p align="center">
+A complete DC Motor Variable Speed Drive (VSD) designed using analog electronics, featuring PWM speed control, bidirectional motor control, PCB design, fabrication, and hardware validation.
+</p>
 
 ---
 
-# Project Architecture
+#  Overview
 
-The Variable Speed Drive is divided into the following functional blocks:
+This project presents the design and implementation of a **Variable Speed Drive (VSD)** for a DC motor using **Pulse Width Modulation (PWM)**.
+
+The project covers the complete engineering workflow, including:
+
+- Electronic circuit design
+- Component sizing and theoretical calculations
+- Circuit simulation in Proteus
+- PCB schematic capture
+- PCB routing
+- PCB fabrication
+- Component soldering
+- Hardware testing and validation
+
+The final system allows precise control of both the **speed** and **rotation direction** of a DC motor while ensuring stable operation through a regulated power supply and protection circuitry.
+
+---
+
+#  Features
+
+- PWM-based DC motor speed control
+- Forward and reverse motor rotation
+- Start, Stop and Emergency Stop functions
+- Stable regulated 12 V power supply
+- Electrical protection circuitry
+- Complete PCB design and routing
+- Circuit simulation before fabrication
+- Hardware implementation and testing
+
+---
+
+#  Project Architecture
+
+The Variable Speed Drive is composed of the following functional blocks:
 
 - Power Supply & Voltage Regulation
-- PWM Speed Control
+- PWM Generator
 - Control Logic
 - Direction Control
 - Protection Circuit
 - H-Bridge Driver
-- Motor Output
+- DC Motor Output
 
 ---
 
@@ -33,17 +60,15 @@ The Variable Speed Drive is divided into the following functional blocks:
 
 | Tool | Purpose |
 |------|---------|
-| Proteus Design Suite | Circuit design, simulation, PCB routing and 3D visualization |
+| Proteus Design Suite | Circuit design, simulation, PCB layout and routing |
 
 ---
 
-# Electronic Components
-
-Main components used in the project include:
+#  Main Components
 
 - NE555 Timer
 - LM358 Operational Amplifier
-- LM393 Voltage Comparator
+- LM393 Comparator
 - CD4011 CMOS NAND Gate
 - 7812 Voltage Regulator
 - MOSFET Transistors
@@ -51,18 +76,18 @@ Main components used in the project include:
 - Zener Diodes
 - Electrolytic Capacitors
 - Potentiometer
-- Heat Sink
 - LEDs
+- Heat Sink
 - Resistors
 
 ---
 
-# Development Process
+#  Development Process
 
-1. Circuit analysis
+1. Requirement analysis
 2. Component selection
 3. Theoretical calculations
-4. Proteus simulation
+4. Circuit simulation
 5. PCB schematic design
 6. PCB routing
 7. PCB fabrication
@@ -71,58 +96,109 @@ Main components used in the project include:
 
 ---
 
-# Project Preview
+#  Project Preview
 
-## PCB Layout`
-board.png
-## 3D PCB View
+## PCB Layout
 
-images/pcb_3d.png
+<p align="center">
+<img src="images/appendix_pcb_layout.png" width="850">
+</p>
+
+<p align="center">
+<i>PCB layout designed using Proteus.</i>
+</p>
+
+---
+
+## PCB Routing
+
+<p align="center">
+<img src="images/convertor_board_routing.png" width="850">
+</p>
+
+<p align="center">
+<i>Copper routing of the PCB.</i>
+</p>
+
+---
+
+## Fabricated PCB
+
+<p align="center">
+<img src="images/board.png" width="700">
+</p>
+
+<p align="center">
+<i>Manufactured PCB before component assembly.</i>
+</p>
+
+---
 
 ## Final Hardware
 
-final_board.jpg
+<p align="center">
+<img src="images/final_board_realview_front.png" width="600">
+<img src="images/final_board_back.png" width="600">
+</p>
+
+<p align="center">
+<i>Front and back views of the assembled Variable Speed Drive.</i>
+</p>
+
+---
 
 # What I Learned
 
-This project allowed me to strengthen both my theoretical understanding and practical skills in electronic design.
+This project significantly strengthened both my theoretical knowledge and practical skills in electronics.
 
 During its development, I learned:
 
-- Designing analog and digital electronic circuits
+- Analog electronic circuit design
 - PWM generation using the NE555 timer
 - Operational amplifier and comparator applications
-- Logic design using CMOS NAND gates
-- Power supply design and voltage regulation
-- PCB schematic capture and routing
-- Signal simulation and verification with Proteus
+- CMOS logic circuit implementation
+- Voltage regulation and power electronics
+- PCB schematic capture
+- PCB routing techniques
+- Electronic circuit simulation using Proteus
 - PCB fabrication workflow
-- Component soldering techniques
-- Hardware debugging and testing
+- Component soldering
+- Hardware debugging and validation
 - Technical documentation using LaTeX
 
 ---
 
-# Repository Structure
+#  Repository Structure
 
 ```text
 .
 ├── Documentation/
 │   └── Project_Report.pdf
 ├── Proteus/
-│   ├── Simulation
-│   ├── PCB
-│   └── Schematic
-├── Images/
-├── PCB/
+│   ├── Simulation/
+│   ├── PCB/
+│   └── Schematic/
+├── images/
+│   ├── appendix_pcb_layout.png
+│   ├── convertor_board_routing.png
+│   ├── board.png
+│   ├── final_board_realview_front.png
+│   └── final_board_back.png
 ├── README.md
 └── LICENSE
 ```
 
-# Future Improvements
+---
 
-- Manufacture the complete double-layer PCB.
-- Add microcontroller-based digital control.
+#  Future Improvements
+
+- Design a compact double-layer PCB
+- Implement microcontroller-based digital control
+- Add closed-loop speed regulation
+- Integrate overcurrent protection
+- Improve thermal management
+
+---
 
 # Author
 
@@ -131,8 +207,10 @@ During its development, I learned:
 Electrical Engineering Student  
 National Engineering School of Monastir (ENIM)
 
+Interested in **Embedded Systems, Robotics, Automation, and Computer Vision.**
+
 ---
 
-# License
+# 📄 License
 
-This project is intended for educational and research purposes.
+This project is developed for **educational and research purposes**.
